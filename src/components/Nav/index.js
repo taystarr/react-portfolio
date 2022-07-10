@@ -1,6 +1,12 @@
 import React from 'react';
 
-function Nav() {
+function Nav(props) {
+
+    // const {
+    //     projectSelected,
+    //     setProjectSelected
+    // } = props;
+
     return (
         <header className='flex-row px-1'>
             <h2>
@@ -10,19 +16,21 @@ function Nav() {
             </h2>
             <nav>
                 <ul className='flex-row'>
-                    <li className='mx-1'>
-                        <a href='#about'>
+                    <li className='mx-1 active'>
+                        <a href='/about'>
                             About Me
                         </a>
                     </li>
-                    <li>
-                        <span>Portfolio</span>
+                    <li className='active'>
+                        {/* <link to="/project"> */}
+                        <a href='/portfolio'>Portfolio</a>
+                        {/* </link> */}
                     </li>
-                    <li>
-                        <span>Contact</span>
+                    <li className='active'>
+                        <a href='/contact'>Contact</a>
                     </li>
-                    <li>
-                        <span>Resume</span>
+                    <li className='active'>
+                        <a href='/resume'>Resume</a>
                     </li>
                 </ul>
             </nav>

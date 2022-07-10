@@ -1,38 +1,41 @@
 import React from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
+import Project from './components/Project';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
 import './index.css';
-
-// const faders = document.querySelectorAll('.fade-in');
 
 function App() {
 
-  // const appearOptions = {
-  //   threshold: 1
-  // };
-
-  // const appearOnScroll = new IntersectionObserver (function(entries, appearOnScroll) {
-  //   entries.forEach(entry => {
-  //     if (!entry.isIntersecting) {
-  //       return;
-  //     } else {
-  //       entry.target.classList.add('appear');
-  //       appearOnScroll.unobserve(entry.target);
-  //     }
-  //   })
-  // },
-  // appearOptions);
-
-  // faders.forEach(fader => {
-  //   appearOnScroll.observe(fader);
-  // });
-
+  let Component
+  // eslint-disable-next-line
+  switch (window.location.pathname) {
+    case "/":
+      Component = App;
+      break;
+    case "/about":
+      Component = About;
+      break;
+    case "/portfolio":
+      Component = Project;
+      break;
+    case "/contact":
+      Component = Contact;
+      break;
+    case "/resume":
+      Component = Resume;
+      break;
+  }
   return (
     
     <div>
-      <Nav></Nav>
+      <Nav>
+      </Nav>
+      <Component></Component>
       <main>
-        <About></About>
+          {/* <About></About>
+          <Project></Project> */}
       </main>
     </div>
   );
