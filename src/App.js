@@ -12,8 +12,9 @@ function App() {
   // eslint-disable-next-line
   switch (window.location.pathname) {
     case "/":
-      Component = App;
+      Component = About;
       break;
+      // eslint-disable-next-line
     case "/about":
       Component = About;
       break;

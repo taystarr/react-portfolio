@@ -1,11 +1,6 @@
 import React from 'react';
 
-function Nav(props) {
-
-    // const {
-    //     projectSelected,
-    //     setProjectSelected
-    // } = props;
+function Nav() {
 
     return (
         <header className='flex-row px-1'>
@@ -16,26 +11,38 @@ function Nav(props) {
             </h2>
             <nav>
                 <ul className='flex-row'>
-                    <li className='mx-1 active'>
-                        <a href='/about'>
+                    <CustomLink href='/about'>About Me</CustomLink>
+                    <CustomLink href='/portfolio'>Portfolio</CustomLink>
+                    <CustomLink href='/contact'>Contact</CustomLink>
+                    <CustomLink href='/resume'>Resume</CustomLink>
+
+                    {/* <li className='mx-1'>
+                        <a className='active' href='/about'>
                             About Me
                         </a>
+                    </li> 
+                    <li>
+                        <a className='active' href='/portfolio'>Portfolio</a>
                     </li>
-                    <li className='active'>
-                        {/* <link to="/project"> */}
-                        <a href='/portfolio'>Portfolio</a>
-                        {/* </link> */}
+                    <li>
+                        <a className='active' href='/contact'>Contact</a>
                     </li>
-                    <li className='active'>
-                        <a href='/contact'>Contact</a>
-                    </li>
-                    <li className='active'>
-                        <a href='/resume'>Resume</a>
-                    </li>
+                    <li>
+                        <a className='active' href='/resume'>Resume</a>
+                    </li> */}
                 </ul>
             </nav>
         </header>
     );
+}
+
+function CustomLink({ href, children, ...props }) {
+    const path = window.location.pathname
+   return (
+    <li >
+        <a className={path === href ? "active" : ""} href={href} {...props}>{children}</a>
+    </li>
+   )
 }
 
 export default Nav;
