@@ -7,7 +7,8 @@ body {
   margin: 20px;
   padding: 0;
   font-weight: 100;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(73, 72, 72);
   background: rgb(174,192,238);
   background: radial-gradient(circle, rgba(174,192,238,0.20251396648044695) 16%, rgba(220,148,233,0.19692737430167595) 100%);
 }
@@ -18,7 +19,7 @@ body {
   float: left;
   max-width: 450px;
   shape-outside: circle(50%);
-  animation: fadeIn 3s;
+  animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
@@ -28,7 +29,7 @@ body {
 
 .abouttext {
   display: inline;
-  animation: fadeIn 3s;
+  animation: fadeIn 2s;
 }
 
 h1,
@@ -37,20 +38,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   margin: 20px;
   line-height: 1.25;
+  color: rgb(73, 72, 72);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(73, 72, 72);
 }
 
 li {
   list-style: none;
-  margin: 14px;
+  margin: 10px;
   margin-left: 25px;
 }
 
@@ -83,6 +85,8 @@ a-hover {
   height: 300px;
   min-width: 500px;
   max-width: 600px;
+  margin-bottom: auto;
+  animation: fadeIn 2s;
 }
 
 .img-img {
@@ -127,6 +131,7 @@ a-hover {
 .img-title {
   font-weight: bolder;
   font-size: 35px;
+  color: white;
 }
 
 .img-desc {
@@ -166,10 +171,81 @@ a-hover {
   }
 }
 
-.active {
+/* .active {
   color:deeppink;
+} */
+
+.active {
+  color: rgb(255, 112, 188);
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px rgb(249, 126, 200),
+    0 0 21px #f09,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
 }
 
-.active:hover {
-  color: deeppink;
+.contact-label {
+  margin-right: 15px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-title {
+  margin-left: 40px;
+  display: block;
+  animation: fadeIn 2s;
+}
+
+form {
+  width: 40%;
+  font-size: 20px;
+  margin-left: 40px;
+  float: left;
+  display: block;
+  animation: fadeIn 2s;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.contact-text {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+  margin-bottom: 15px;
+  width: 400px;
+  display: block;
+}
+
+.contact-btn {
+  background-color: rgba(119, 96, 114, 0.23);
+  border-radius: 8px;
+  padding: 8px 25px;
+  color: rgb(73, 72, 72);
+  font-size: 15px;
+}
+
+.contact-text:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .7rem rgba(119, 96, 114, 0.638);
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 .7rem rgba(119, 96, 114, 0.638);
 }
