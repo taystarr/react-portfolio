@@ -35,7 +35,7 @@ function Project() {
                         </div>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column2">
                     <div className="img-wrap">
                         <img className="img-img" src={require('../../BE_e-comss.png')} alt="e-com" />
                         <div className="img-overlay img-overlay--blur">

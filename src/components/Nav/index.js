@@ -4,13 +4,13 @@ function Nav() {
 
     return (
         <header className='flex-row px-1'>
-            <h2>
+            <h2 className="home-btn">
                 <a href='/'>
                     Taylor's Portfolio
                 </a>
             </h2>
             <nav>
-                <ul className='flex-row'>
+                <ul className='flex-row nav-list'>
                     <CustomLink href='/about'>About Me</CustomLink>
                     <CustomLink href='/portfolio'>Portfolio</CustomLink>
                     <CustomLink href='/contact'>Contact</CustomLink>
