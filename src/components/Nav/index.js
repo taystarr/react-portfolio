@@ -13,8 +13,8 @@ function Nav() {
                 <ul className='flex-row nav-list'>
                     <CustomLink href='/about'>About Me</CustomLink>
                     <CustomLink href='/portfolio'>Portfolio</CustomLink>
-                    <CustomLink href='/contact'>Contact</CustomLink>
                     <CustomLink href='/resume'>Resume</CustomLink>
+                    <CustomLink href='/contact'>Contact</CustomLink>
 
                     {/* <li className='mx-1'>
                         <a className='active' href='/about'>
