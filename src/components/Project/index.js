@@ -1,4 +1,11 @@
 import React from "react";
+import gradeGads from '../../FS_GGSS.png';
+import thoughtP from '../../BE_TPSS.png';
+import ballzB from '../../FE_B&BSS.png';
+import eComm from '../../BE_e-comss.png';
+import weatherD from '../../FE_WDSS.png';
+import ogPort from '../../FE_OGportSS.png';
+
 
 function Project() {
     return (
@@ -6,7 +13,7 @@ function Project() {
             <div className="row">
                 <div className="column">
                     <div className="img-wrap">
-                        <img className="img-img" src={require('../../FS_GGSS.png')} alt="grade-gatsby" />
+                        <img className="img-img" src={gradeGads} alt="grade-gatsby" />
                         <div className="img-overlay img-overlay--blur">
                             <a href="https://grade-gatsby.herokuapp.com/" target="_blank" rel="norefferer noopener" className="click" >
                                 <h1 className="img-title">The Grade Gatsby</h1>
@@ -15,7 +22,7 @@ function Project() {
                         </div>
                     </div>
                     <div className="img-wrap">
-                        <img className="img-img" src={require('../../BE_TPSS.png')} alt="thought-provoking" />
+                        <img className="img-img" src={thoughtP} alt="thought-provoking" />
                         <div className="img-overlay img-overlay--blur">
                             <a href="https://github.com/taystarr/thought-provoking" target="_blank" rel="norefferer noopener" className="click" >
                                 <h1 className="img-title">Thought Provoking</h1>
@@ -25,7 +32,7 @@ function Project() {
                     </div>
                     <div className="img-wrap">
                     
-                        <img className="img-img" src={require('../../FE_B&BSS.png')} alt="ballz-booze" />
+                        <img className="img-img" src={ballzB} alt="ballz-booze" />
                         <div className="img-overlay img-overlay--blur">
                             <a href="https://blindsweatyhansolo.github.io/ballzandbooze/" target="_blank" rel="norefferer noopener" className="click" >
                                 <h1 className="img-title">Ballz & Booze</h1>
@@ -36,16 +43,16 @@ function Project() {
                 </div>
                 <div className="column2">
                     <div className="img-wrap">
-                        <img className="img-img" src={require('../../BE_e-comss.png')} alt="e-com" />
+                        <img className="img-img" src={eComm} alt="e-com" />
                         <div className="img-overlay img-overlay--blur">
                             <a href="https://github.com/taystarr/backend-e-commerce" target="_blank" rel="norefferer noopener" className="click" >
-                                <h1 className="img-title">Backend E-Commerce</h1>
+                                <h1 className="img-title">Back-End E-Commerce</h1>
                             </a>
-                            <p className="img-desc">A backend project that uses mySQL to create and modify shop inventory including tags, products, and categories.</p>
+                            <p className="img-desc">A back-end project that uses mySQL to create and modify shop inventory including tags, products, and categories.</p>
                         </div>
                     </div>
                     <div className="img-wrap">
-                        <img className="img-img" src={require('../../FE_WDSS.png')} alt="weather-dash-API" />
+                        <img className="img-img" src={weatherD} alt="weather-dash-API" />
                         <div className="img-overlay img-overlay--blur">
                             <a href="https://taystarr.github.io/weather-dashboard/" target="_blank" rel="norefferer noopener" className="click" >
                                 <h1 className="img-title">Weather Dashboard</h1>
@@ -54,7 +61,7 @@ function Project() {
                         </div>
                     </div>
                     <div className="img-wrap">
-                        <img className="img-img" src={require('../../FE_OGportSS.png')} alt="original portfolio" />
+                        <img className="img-img" src={ogPort} alt="original portfolio" />
                         <div className="img-overlay img-overlay--blur">
                             <a href="https://taystarr.github.io/challenge-2/" target="_blank" rel="norefferer noopener" className="click" >
                                 <h1 className="img-title">HTML & CSS Portfolio</h1>

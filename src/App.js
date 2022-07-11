@@ -12,7 +12,7 @@ function App() {
   let Component
   // eslint-disable-next-line
   switch (window.location.pathname) {
-    case "/":
+    case "/react-portfolio":
       Component = About;
       break;
       // eslint-disable-next-line
