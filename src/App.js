@@ -36,6 +36,7 @@ function App() {
       </Nav>
       <Component></Component>
       <main>
+        <h1>It would be nice if this worked</h1>
           {/* <About></About>
           <Project></Project> */}
       </main>
