@@ -5,7 +5,7 @@ function Nav() {
     return (
         <header className='flex-row px-1'>
             <h2 className="home-btn">
-                <a href='https://taystarr.github.io/react-portfolio/'>
+                <a href='/react-portfolio'>
                     Taylor's Portfolio
                 </a>
             </h2>
