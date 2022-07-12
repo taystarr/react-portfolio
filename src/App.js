@@ -4,7 +4,7 @@ import {React} from 'react';
 // import Project from './components/Project';
 // import Contact from './components/Contact';
 // import Resume from './components/Resume';
-import './index.css';
+// import './index.css';
 // import Footer from './components/Footer';
 
 function App() {
