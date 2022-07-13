@@ -1,48 +1,34 @@
 import React from 'react';
 
-function Nav() {
+function Nav({updatePage}) {
 
     return (
         <header className='flex-row px-1'>
             <h2 className="home-btn">
-                <a href='/react-portfolio'>
-                    Taylor's Portfolio
+                <a href='#about' onClick={() => updatePage('about')}>
+                    Taylor Roberts
                 </a>
             </h2>
             <nav>
                 <ul className='flex-row nav-list'>
-                    <CustomLink href='/about'>About Me</CustomLink>
-                    <CustomLink href='/portfolio'>Portfolio</CustomLink>
-                    <CustomLink href='/resume'>Resume</CustomLink>
-                    <CustomLink href='/contact'>Contact</CustomLink>
-
-                    {/* <li className='mx-1'>
-                        <a className='active' href='/about'>
+                    <li className='mx-1'>
+                        <a className='active' href='#about' onClick={() => updatePage('about')}>
                             About Me
                         </a>
                     </li> 
                     <li>
-                        <a className='active' href='/portfolio'>Portfolio</a>
+                        <a className='active' href='#portfolio' onClick={() => updatePage('portfolio')}>Portfolio</a>
                     </li>
                     <li>
-                        <a className='active' href='/contact'>Contact</a>
+                        <a className='active' href='#resume' onClick={() => updatePage('resume')}>Resume</a>
                     </li>
                     <li>
-                        <a className='active' href='/resume'>Resume</a>
-                    </li> */}
+                        <a className='active' href='#contact' onClick={() => updatePage('contact')}>Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
     );
-}
-
-function CustomLink({ href, children, ...props }) {
-    const path = window.location.pathname
-   return (
-    <li >
-        <a className={path === href ? "active" : ""} href={href} {...props}>{children}</a>
-    </li>
-   )
 }
 
 export default Nav;
