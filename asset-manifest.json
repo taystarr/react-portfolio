@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.f2d0678c.css",
-    "main.js": "/react-portfolio/static/js/main.a4858049.js",
+    "main.css": "/react-portfolio/static/css/main.48700367.css",
+    "main.js": "/react-portfolio/static/js/main.a2fe1822.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/portfolio.png": "/react-portfolio/static/media/portfolio.6486bf2360d64d0567fc.png",
     "static/media/FE_B&BSS.png": "/react-portfolio/static/media/FE_B&BSS.954094a8b4fc7733a7ff.png",
@@ -13,14 +13,15 @@
     "static/media/Gathr-SS.png": "/react-portfolio/static/media/Gathr-SS.f36b0adac10c3c29507e.png",
     "static/media/FE_WDSS.png": "/react-portfolio/static/media/FE_WDSS.51d1ed06043dd8d91c14.png",
     "static/media/linkedin-logo.png": "/react-portfolio/static/media/linkedin-logo.3df95b282c7a2d8e5f0b.png",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.eb7b3fb0621e0f7b31ae.pdf",
     "static/media/github-icon.png": "/react-portfolio/static/media/github-icon.f3b6807b3a35137fa985.png",
     "index.html": "/react-portfolio/index.html",
-    "main.f2d0678c.css.map": "/react-portfolio/static/css/main.f2d0678c.css.map",
-    "main.a4858049.js.map": "/react-portfolio/static/js/main.a4858049.js.map",
+    "main.48700367.css.map": "/react-portfolio/static/css/main.48700367.css.map",
+    "main.a2fe1822.js.map": "/react-portfolio/static/js/main.a2fe1822.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2d0678c.css",
-    "static/js/main.a4858049.js"
+    "static/css/main.48700367.css",
+    "static/js/main.a2fe1822.js"
   ]
 }
